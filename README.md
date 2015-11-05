@@ -8,3 +8,5 @@ Project data is found in CP.zip
 run_analysis.R can be used to download the original data from the url , or unzip and then rocess the data within CP.zip
 
 the final output from the R script is found in tidy_data.txt
+
+still need to change the codebook's title to "Codebook.md".  ?look for some markup language?

@@ -1,6 +1,20 @@
+The code book
+Information about the variables (including units!) in the data set not contained in the tidy data
+Information about the summary choices you made
+Information about the experimental study design you used
+Some other important tips
+
+A common format for this document is a Word/text file.
+There should be a section called "Study design" that has a thorough description of how you collected the data.
+
+
 Client: Course Project for Getting and Cleaning Data
 
-The following project is a summarization of accelerometer data recorded for 30 volunteer particpants (subjects) using a Samsung Galaxy S smartphone.   Movement measurements collected by the smartphones' accelerometers and gyroscopes.   Activity types were assigned manually using video recordings of the partcipants' activities.  The 30 particpants were separated into two groups.  70% of the individuals were used to train the software to recognize activity types, and the remaining 30% were used to text the efficiency of the trained software.
+DATA DESCRIPTION:
+The following project is a summation of body movement data recorded for 30 volunteer participants (subjects) between the ages of 19 - 48, using a Samsung Galaxy S smartphone.   Measurements of linear and angular movements were collected by the smartphones' accelerometers and gyroscopes.  Each measurement was recorded during a specified window of time.  Each measurement variable for all particpants were then normalized so that all movement values are between -1 and 1, which also eliminates the units of measurement.
+
+DATA CLASSIFICATION:
+Activity types were assigned manually using video recordings of the partcipants' activities.  The 30 particpants were separated into two groups.  70% of the individuals were used to train the software to recognize activity types, and the remaining 30% were used to text the efficiency of the trained software.
 
 Additional information regarding the study can be found in the "README.txt" found within the original data files, as well as 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 

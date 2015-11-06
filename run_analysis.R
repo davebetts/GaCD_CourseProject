@@ -59,7 +59,7 @@ mean_std_subset <- full[,c(grep("*mean", names(full)), grep("*std", names(full))
 ## Combine training and testing subsets with observation labels for subject and activity
 ####################################################
 ## 
-subj_act_full <- cbind(fullsubj, fullact, full)
+subj_act_full <- cbind(fullsubj, fullact, mean_std_subset)
 
 ####################################################
 ## Read descriptive activity labels
@@ -72,11 +72,11 @@ colnames(act_labels) <- c("ID", "activity")
 ## Replace activity numbers with descriptive activity labels
 ####################################################
 ## 
-namedsubj_act_full <- merge(alabels, subj_act_full, by.x = "ID", by.y = "ID", all = TRUE)
+namedsubj_act_full <- merge(act_labels, subj_act_full, by.x = "ID", by.y = "ID", all = TRUE)
 namedsubj_act_full <- namedsubj_act_full[,c(3,2,4:82)]
 
 ####################################################
-## Modify measurement variable names to a more human readable format
+## Modify measurement variable names to a human readable format
 ####################################################
 ## 
 oldnames <- names(namedsubj_act_full)
@@ -112,6 +112,7 @@ colnames(namedsubj_act_full) <- newnames
 ## 
 newsort <- namedsubj_act_full[,-c(1:2)]
 newsort <- newsort[,sort(names(newsort))]
+final <- cbind(namedsubj_act_full[,c(1:2)],newsort)
 
 ####################################################
 ## Summarize the mean of each measurement variable per activity-participant combination.
@@ -121,3 +122,10 @@ newsort <- newsort[,sort(names(newsort))]
 library(dplyr)
 by_subj_act <- final %>% group_by(participant, activity)
 tidy_data <- by_subj_act %>% summarise_each(funs(mean))
+
+####################################################
+## Write the tidy data set to a txt file in the working directory
+####################################################
+## 
+
+write.table(tidy_data,"tidy_data.txt",row.names=FALSE)

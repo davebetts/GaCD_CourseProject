@@ -7,8 +7,10 @@ Some other important tips
 A common format for this document is a Word/text file.
 There should be a section called "Study design" that has a thorough description of how you collected the data.
 
-
 Client: Course Project for Getting and Cleaning Data
+
+Summary of "tidy_data.txt"
+The final output for the course project is "tidy_data.txt", a summary of the measurements of body movements of 30 volunteers using the Samsung Galaxy S smartphone.  The rows are labelled by the first two columns, participant IDs (1-30) and activity names (6 activities).  Combined, these two columns provided the groups for summarizing the movement observations (180 obserations).  The remaining columns contain only the variables describing the means and standard deviations of measurements recorded by the smartphones.  All other measurements from the orginal data set were excluded.
 
 DATA DESCRIPTION:
 The following project is a summation of body movement data recorded for 30 volunteer participants (subjects) between the ages of 19 - 48, using a Samsung Galaxy S smartphone.   Measurements of linear and angular movements were collected by the smartphones' accelerometers and gyroscopes.  Each measurement was recorded during a specified window of time.  Each measurement variable for all particpants were then normalized so that all movement values are between -1 and 1, which also eliminates the units of measurement.
@@ -48,6 +50,7 @@ You should create one R script called run_analysis.R that does the following.
 Because the term "measurements" was ambiguous, mean frequency measurements were included because they fit within the clients description of retaining means.  The columns have been sorted to facilitate the both the removal of the mean frequency columns and to group similar measurements to increase readability of the table alone.
 
 For the goal of "descriptive variable names" complete words were used for the naming of the measuremetn variables.  Because the measurement names are a combination of multiple terms, capitals and underscores were used to provide visual breaks between terms.  Although all lower case characters and the absence of special characters are encouraged, readabibilty warrants their inclusion in this case.
+
 Movement is measured by accelerometers, and gyroscopes.
 Movement has X, Y, and Z directionality, as well as Jerk movements.
 Magnitude, Timing and Frequency of these movements are measured.

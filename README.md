@@ -45,7 +45,7 @@ This course project fulfils the characteristics of a tidy data project by includ
 ** There are no repeated column names
 ** Each column contains the values for a single measurement
 * Each different observation of that variable should be in a different row
-** Two columns of the table - the particpant's number, and activity name - provide the row labels for each observation event.  
+** Two columns of the table - the participant's number, and activity name - provide the row labels for each observation event.  
 ** There is a row for each participant-activity combination, and no repetitions
 * There should be one table for each "kind" of variable
 ** all of the measurements have been summarised as a mean for each observation (row)
@@ -57,5 +57,3 @@ This course project fulfils the characteristics of a tidy data project by includ
 ** Separate terms within each variable name were re-arranged to make it easier to read the movement type: in the X, Y or Z direction, Jerk movements, Gyroscope or Accelerometer readings, etc.
 ** Columns were arranged in alphabetical order in order to improve readability of the data set as a whole by putting similar measurements next to each other.  
 ** Column order also facilitates additional sub-setting of the variables in the future (e.g. all of the mean frequency data is grouped, and could be excluded with minimal effort)
-
-

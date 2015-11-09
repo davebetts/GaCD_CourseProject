@@ -3,6 +3,11 @@
 
 Data for this project are from a study of the body movement tracking software for the Samsung Galaxy S smartphone.  The data set and version of the data were selected by the Getting and Cleaning course instructors.
 
+If R has the working directory set to a branch of this course project, the final tidy data set can be read using the following code:
+
+data <- read.table("tidy_data.txt", header = TRUE) 
+View(data)
+
 # Project Objectives
 * Combine multiple tables from the body movement tracking study into a single table of tidy data
 * Subset the data reported from the study to those measurements reporting either the mean or standard deviations (std) of a measurement.

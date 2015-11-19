@@ -5,8 +5,8 @@ Data for this project are from a study of the body movement tracking software fo
 
 If R has the working directory that is set to a branch of this github repo, the final tidy data set can be read into R using the following code:
 
-```data <- read.table("tidy_data.txt", header = TRUE)
-data
+    data <- read.table("tidy_data.txt", header = TRUE)
+    data
 
 
 ## Project Objectives

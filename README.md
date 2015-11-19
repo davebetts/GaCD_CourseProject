@@ -27,10 +27,12 @@ The raw data downloaded for this project is found in both the "CP.zip" file and 
 
 ## R-script
 "run_analysis.R" can perform the following processes and transformations of the data:
-Steps 1 and 2 can be skipped if the "UCI HAR Dataset" folder is available
-1. Download the original data from the url provided by the course instructors
-2. Unzip and read the raw data from the file "CP.zip"
-3. Combine, subset and summarize the requested data into a single table, having the characteristics of a tidy data set.
+  1. Download the original data from the url provided by the course instructors
+  2. Unzip and read the raw data from the file "CP.zip"
+  3. Combine, subset and summarize the requested data into a single table, having the characteristics of a tidy data set.
+
+Steps 1 and 2 can be skipped if the "UCI HAR Dataset" folder is available.
+
 
 ## Final output vs. objectives
 The description of tidy data provided by the course can be found in the lecture "Components of Tidy Data" from Week 1 of the Getting and Cleaning Data course.
